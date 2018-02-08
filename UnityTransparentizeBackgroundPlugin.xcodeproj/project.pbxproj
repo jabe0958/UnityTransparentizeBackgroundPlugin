@@ -6,9 +6,15 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0F3A20E9202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A20E8202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0F3A20DC202CA21D00E12BA7 /* UnityTransparentizeBackgroundPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityTransparentizeBackgroundPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3A20DF202CA21D00E12BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3A20E7202CA24C00E12BA7 /* UnityTransparentizeBackgroundPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityTransparentizeBackgroundPlugin.h; sourceTree = "<group>"; };
+		0F3A20E8202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityTransparentizeBackgroundPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +31,7 @@
 		0F3A20D3202CA21D00E12BA7 = {
 			isa = PBXGroup;
 			children = (
+				0F3A20E5202CA22100E12BA7 /* src */,
 				0F3A20DE202CA21D00E12BA7 /* UnityTransparentizeBackgroundPlugin */,
 				0F3A20DD202CA21D00E12BA7 /* Products */,
 			);
@@ -44,6 +51,23 @@
 				0F3A20DF202CA21D00E12BA7 /* Info.plist */,
 			);
 			path = UnityTransparentizeBackgroundPlugin;
+			sourceTree = "<group>";
+		};
+		0F3A20E5202CA22100E12BA7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0F3A20E6202CA22700E12BA7 /* headers */,
+				0F3A20E8202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0F3A20E6202CA22700E12BA7 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				0F3A20E7202CA24C00E12BA7 /* UnityTransparentizeBackgroundPlugin.h */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3A20E9202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +250,12 @@
 		0F3A20E3202CA21D00E12BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UnityTransparentizeBackgroundPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tatsudoya.macos.UnityTransparentizeBackgroundPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -239,6 +266,7 @@
 		0F3A20E4202CA21D00E12BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UnityTransparentizeBackgroundPlugin/Info.plist;
