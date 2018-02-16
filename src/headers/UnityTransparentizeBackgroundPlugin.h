@@ -11,6 +11,7 @@
 
 extern "C" {
     void TransparentizeBackground();
+    void TransparentizeBackground2();
 }
 
 #endif /* UnityTransparentizeBackgroundPlugin_h */

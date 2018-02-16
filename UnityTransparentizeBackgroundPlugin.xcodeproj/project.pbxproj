@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F3A20E9202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3A20E8202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m */; };
+		0F797BCE2033120700C0786B /* PluginUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F797BCD2033120700C0786B /* PluginUtilities.m */; };
+		0F969B9420308D39002411B4 /* TranparentizedBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F969B9320308D39002411B4 /* TranparentizedBackgroundWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +17,10 @@
 		0F3A20DF202CA21D00E12BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3A20E7202CA24C00E12BA7 /* UnityTransparentizeBackgroundPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityTransparentizeBackgroundPlugin.h; sourceTree = "<group>"; };
 		0F3A20E8202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityTransparentizeBackgroundPlugin.m; sourceTree = "<group>"; };
+		0F797BCD2033120700C0786B /* PluginUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginUtilities.m; sourceTree = "<group>"; };
+		0F797BCF203312FD00C0786B /* PluginUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginUtilities.h; sourceTree = "<group>"; };
+		0F969B9220308D39002411B4 /* TranparentizedBackgroundWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranparentizedBackgroundWindow.h; sourceTree = "<group>"; };
+		0F969B9320308D39002411B4 /* TranparentizedBackgroundWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranparentizedBackgroundWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 		0F3A20D3202CA21D00E12BA7 = {
 			isa = PBXGroup;
 			children = (
+				0F783A7220347B9A00EACA94 /* trial_src */,
 				0F3A20E5202CA22100E12BA7 /* src */,
 				0F3A20DE202CA21D00E12BA7 /* UnityTransparentizeBackgroundPlugin */,
 				0F3A20DD202CA21D00E12BA7 /* Products */,
@@ -66,6 +73,25 @@
 			isa = PBXGroup;
 			children = (
 				0F3A20E7202CA24C00E12BA7 /* UnityTransparentizeBackgroundPlugin.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		0F783A7220347B9A00EACA94 /* trial_src */ = {
+			isa = PBXGroup;
+			children = (
+				0F969B9320308D39002411B4 /* TranparentizedBackgroundWindow.m */,
+				0F797BCD2033120700C0786B /* PluginUtilities.m */,
+				0F783A7320347BA800EACA94 /* headers */,
+			);
+			path = trial_src;
+			sourceTree = "<group>";
+		};
+		0F783A7320347BA800EACA94 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				0F969B9220308D39002411B4 /* TranparentizedBackgroundWindow.h */,
+				0F797BCF203312FD00C0786B /* PluginUtilities.h */,
 			);
 			path = headers;
 			sourceTree = "<group>";
@@ -137,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F797BCE2033120700C0786B /* PluginUtilities.m in Sources */,
+				0F969B9420308D39002411B4 /* TranparentizedBackgroundWindow.m in Sources */,
 				0F3A20E9202CA25800E12BA7 /* UnityTransparentizeBackgroundPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
